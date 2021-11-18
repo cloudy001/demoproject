@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    tools {
-    gradle 'gradle-7.3'
-           } //tools
+    //tools {
+    //gradle 'gradle-7.3'
+      //     } //tools
     stages {
         stage('Compile Stage') {
             steps {
