@@ -3,19 +3,19 @@ agent any {
 stages {
 stage ('Compile'){
 steps {
- echo 'compiling application'
+ echo 'compiling application...'
 }
 }
 // Test
 stage ('Test'){
 steps {
- echo 'Testing application'
+ echo 'Testing application...'
 }
 }
 // Deploy
 stage ('Deploy'){
 steps {
- echo 'Deploying application'
+ echo 'Deploying application....'
 }
 }
 }
