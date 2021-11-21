@@ -1,6 +1,7 @@
 pipeline{
 agent any {
 stages {
+//compile
 stage ('Compile'){
 steps {
  echo 'compiling application...'
