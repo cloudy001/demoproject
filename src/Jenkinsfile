@@ -1,25 +1,26 @@
-pipeline{
-agent any
-stages {
-//compile
-stage ('Compile'){
-steps {
- echo 'compiling application...'
-}
-}
-// Test
-stage ('Test'){
-steps {
- echo 'Testing application..****.'
-}
-}
-// Deploy
-stage ('Deploy'){
-steps {
- echo 'Deploying application..****..'
-}
-}
+pipeline {
+    agent any
+    //tools {
+    //gradle 'gradle-7.3'
+      //     } //tools
+    stages {
+        stage('Compile Stage') {
+            steps {
+                  echo 'executing compile stage....'
+               // sh './gradlew -v'
+                    } //steps
+                   }// stage
 
-}
+        stage('Test') {
+            steps {
+                echo 'Testing....'
+                   }
+                      }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying.......'
+            }
+        }
 
-}
+        }// stages
+    } //pipeline
