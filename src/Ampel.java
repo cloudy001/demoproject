@@ -1,3 +1,3 @@
 public enum Ampel {
-    GRUN,GELB,ROT
+    GRUN, GELB, ROT
 }
