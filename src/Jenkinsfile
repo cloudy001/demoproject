@@ -10,13 +10,13 @@ steps {
 // Test
 stage ('Test'){
 steps {
- echo 'Testing application...'
+ echo 'Testing application..****.'
 }
 }
 // Deploy
 stage ('Deploy'){
 steps {
- echo 'Deploying application....'
+ echo 'Deploying application..****..'
 }
 }
 }
