@@ -4,7 +4,7 @@ pipeline {
     //gradle 'gradle-7.3'
       //     } //tools
     stages {
-        stage('Compile Stage') {
+        stage('Compile') {
             steps {
                   echo 'Compiling'
                // sh './gradlew -v'
@@ -16,6 +16,11 @@ pipeline {
                 echo 'Testing'
                    }
                       }
+                      stage('Approve') {
+                                  steps {
+                                      echo 'Aproving...'
+                                         }
+                                            }
         stage('Deploy') {
             steps {
                 echo 'Deploying'
