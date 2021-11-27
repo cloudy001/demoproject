@@ -6,19 +6,19 @@ pipeline {
     stages {
         stage('Compile Stage') {
             steps {
-                  echo 'executing compile stage....'
+                  echo 'Compiling'
                // sh './gradlew -v'
                     } //steps
                    }// stage
 
         stage('Test') {
             steps {
-                echo 'Testing.ffff..gg.'
+                echo 'Testing'
                    }
                       }
         stage('Deploy') {
             steps {
-                echo 'Deploying.......'
+                echo 'Deploying'
             }
         }
 
